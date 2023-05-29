@@ -8,6 +8,15 @@ const client = new MongoClient("mongodb://127.0.0.1:27017/")
 router.use(express.json());
 
 //this api should change the current question of the problem
+/** 
+ * SO what should this route do? CRUD or ACER
+ * Given a response which could be:
+ * {action: "create", backgroundinfo, question} -> generates unique id?
+ * {action: "read", _id} //backgroundinfo, question} gives two things
+ * {action: "update", _id, backgroundinfo, question} if exists, change it
+ * {action: "delete", _id} -> deletes by id
+*/
+
 router.post("/", async function (req, res) {
     await client.connect();
     console.log(req.body.token);
