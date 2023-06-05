@@ -20,3 +20,13 @@
 // }
 
 // module.exports = main;
+
+
+/**
+ * Use this to talk about database
+ * 
+ * What should these databases look like?
+ * We have a login database: 
+ * a type with student - we have their username. 
+ * a type with 
+ */
