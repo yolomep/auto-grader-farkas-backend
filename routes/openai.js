@@ -6,10 +6,10 @@ const client = new MongoClient("mongodb://127.0.0.1:27017/")
 router.use(express.json());
 var ObjectId = require('mongodb').ObjectId;
 
-//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
+// Key was public because its not mine - "fake" key
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
-    apiKey: "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" //process.env.OPENAI_API_KEY, lolololol public for now
+    apiKey: "Find your own" //process.env.OPENAI_API_KEY, lolololol ~~public~~ for now
 });
 const openai = new OpenAIApi(configuration);
 
